@@ -4,12 +4,16 @@ function add_estrutura(data) {
 
   // let estrutura = `<div>${data.name} - ${data.username} </div>  `;
 
+
   let estrutura = `
-      <div class="bloco">
-        <h6 class="topo"> <img src="./person.svg"> ${data.level == undefined ? 0 : data.level} - ${data.username} </h6>
-        <div class="img"><img src='avatar.jpg'></div>
-        <p>${data.name}</p>
-        <small>${data.email}</small>
+    <div class="bloco">
+
+      <div class="badge"><img src='imgs/${parseInt(Math.random()*4+1)}.png'></div>
+
+      <h6 class="topo"> <img src="./person.svg"> ${data.id} </h6>
+      <div class="img"><img src='${data.photo}'></div>
+      <p>${data.name}</p>
+      <small><u>Mais detalhes</u></small>
     </div>
     `;
 
@@ -25,7 +29,6 @@ function add_estrutura(data) {
   li.parent = data.indicatedBy.username;
 
   li.appendChild(span);
-
   el.appendChild(li);
 
   if (data.children.length > 0) {

@@ -6,13 +6,21 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+  
+    /* block selection */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+body{
+    overflow: hidden;
 }
 
 .invisible{display: none;}
 
 .btn-open{
-    box-shadow: 0px 0px 3px #00000055;
+    /* box-shadow: 0px 0px 3px #00000055; */
     cursor: pointer;
     margin-top: 10px;
 }
-
