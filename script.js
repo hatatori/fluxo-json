@@ -1,5 +1,5 @@
 import Lista from "./net.json" assert { type: "json" };
-import { add_estrutura, openAll } from "./Estrutura.js";
+import { add_estrutura, openAll } from "./Estrutura_scroll.js";
 import Mouse from './Mouse.js'
 
 let { data } = Lista;
