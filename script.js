@@ -1,9 +1,15 @@
-import Lista from "./net.json" assert { type: "json" };
-import { add_estrutura, openAll } from "./Estrutura_scroll.js";
-import Mouse from './Mouse.js'
+// fetch('./net.json')
+// .then(e=>e.json())
+// .then(e=>{
+//     console.log(e)
+// })
 
-let { data } = Lista;
+// import Lista from "./net.json" assert { type: "json" };
+// import { add_estrutura, openAll } from "./Estrutura_scroll.js";
+// import Mouse from './Mouse.js'
 
-add_estrutura(data);
+// let { data } = Lista;
 
-btn_open_all.onclick = () => openAll();
+// add_estrutura(data);
+
+// btn_open_all.onclick = () => openAll();
